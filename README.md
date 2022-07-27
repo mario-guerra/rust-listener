@@ -20,7 +20,7 @@ It expects to pull messages off a queue that are formatted in JSON as one of the
     "Planet": "Jupiter"
 }
 
-The listenter does some simple message processing in the form of matching the planet to print out a planet-specific message.
+The listener does some simple message processing in the form of matching the planet to print out a planet-specific message.
 The listener uses values read from a .env file to build a connection string to your service bus implementation.
 Replace the values in '<>' brackets listed in the .env file with the relevant details from your servcice bus instance.
 
