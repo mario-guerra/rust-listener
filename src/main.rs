@@ -33,14 +33,14 @@ async fn main() {
             .await
             .expect("Failed to receive message");
             
-            let v = serde_json::from_str(&received_message);
+            let value = serde_json::from_str(&received_message);
             
-            if v.is_ok() {
-                let m: Value = v.unwrap();
+            if value.is_ok() {
+                let message: Value = value.unwrap();
 
-                let s = &m["Planet"];
+                let planet = &message["Planet"];
 
-                match s.as_str() {
+                match planet.as_str() {
                     Some("Earth") => {
                         println!("Destination Earth - Let's drive");
                     },
