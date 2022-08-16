@@ -50,8 +50,8 @@ async fn main() {
                     Some("Europa") => {
                         println!("Destination Europa - Wait for teleportation");
                     }
-                    other => {
-                        println!("Destination {} - Maybe try getting an Uber?", other.unwrap());
+                    _other => {
+                        println!("Destination Unknown - Maybe try getting an Uber?");
                     }
                 }
             }   
